@@ -92,3 +92,8 @@ Notes on machine learning and tensorflow.
     * 3: train on 1,2,4,5, test on 3
     * etc...
 * THEN take mean and variance of classification rate.
+
+
+## reinforcement learning ##
+* is not just simple input/output (IN image OUT car/truck/etc)
+* keeps track of state of world (like in game AI)
