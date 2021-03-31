@@ -1,4 +1,5 @@
 # Tensorflow Certification Study Notes #
+Notes on machine learning and tensorflow.
 
 
 ## about exam ##
@@ -22,6 +23,15 @@
 * fit the model with number of epochs  
 
 
+## neural nets ##
+* Input * Weights + Bias
+* Then activate
+* Run several times
+* Update weights and do backpropagation
+* This is learning
+* Vectorize input
+
+
 ## models ##
 * pass data, make guess, use loss and optimizer to adjust.
 * make another guess, repeat
@@ -33,3 +43,52 @@
 * for example, applying a certain convolution filter to an image,
   can produce a contour of the lines in the image. Therefore,
   the convolution was used to extract the line features of an image.
+
+
+## udemy ##
+* Tensorflow 2.0
+* Deep Learning A-Z: Several projects in TF2
+* Deep Learning: The Complete Guide with ANN and CNN (good theory)
+* Data Science: Deep Learning and Neural Networks in Python (good theory)
+    * Backpropagation
+
+* **X** Modern Deep Learning in Python: Uses TF1 and other libs
+* **X** The Complete ML Course with Python: Uses keras
+
+
+## activation functions ##
+* Universal function approximator
+* Can process any type of data (text, images, audio)
+* **Sigmoid**
+* **Hyperbolic Tangent**
+* **ReLu**
+
+
+## hyperparameters ##
+* learning rate
+* regularization param
+* number of hidden layers
+* activation functions
+
+* No precise way to choose hyperparameters.
+* Can use autoML to test all values.
+* Should develop intuition for hyperparameters.
+* Dependant on many factors.
+
+
+## cross validation ##
+* General way to choose hyperparameters.
+* Fit to signal, not noise of data (overfitting).
+* Train - train on this data.
+* Validation - validate on this data.
+* Test - use data at very end.
+
+
+## k-fold cross validation ##
+* split data into k parts. EX k = 5:
+    * 5 iterations
+    * 1: train on 2-5, test on 1
+    * 2: train on 1,3,4,5, test on 2
+    * 3: train on 1,2,4,5, test on 3
+    * etc...
+* THEN take mean and variance of classification rate.
