@@ -10,7 +10,7 @@ Notes on machine learning and tensorflow.
   datasets efficiently
 
 * https://github.com/lmoroney/dlaicourse
-* No you only have to provide models! No need to plot things!
+* No you only have to provide models, **no need to plot things.**
 
 * regression, DNN, image CNN, NLP (LSTM, CNN), and time series
 

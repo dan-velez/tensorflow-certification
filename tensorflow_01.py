@@ -1,7 +1,9 @@
 #!/usr/bin/python
-# Learning Tensorflow for developer certificate exam.
-# https://ai.google/responsibilities/responsible-ai-practices/
-# https://www.tensorflow.org/resources/responsible-ai
+"""
+Learning Tensorflow for developer certificate exam.
+https://ai.google/responsibilities/responsible-ai-practices/
+https://www.tensorflow.org/resources/responsible-ai
+"""
 
 import os
 
@@ -18,8 +20,8 @@ from sklearn.preprocessing import StandardScaler
 
 
 def building_models_demo():
-    # Display how to put together a sequential model using 
-    # tf.keras (de facto).
+    """Display how to put together a sequential model using 
+    tf.keras (de facto)."""
     
     # Model architecture (binary classifier).
     vmodel = tf.keras.models.Sequential([
@@ -42,9 +44,10 @@ def building_models_demo():
 
 
 def arrhythmia_dataset():
-    # Test loading and plotting data.
+    """Test loading and plotting data."""
 
-    vurl = "https://archive.ics.uci.edu/ml/machine-learning-databases/arrhythmia/arrhythmia.data"
+    vurl = ("https://archive.ics.uci.edu/ml/machine-learning-databases/"+
+           "arrhythmia/arrhythmia.data")
 
     tf.keras.utils.get_file(
         os.path.abspath(os.getcwd())+"\\arrhythmia.data",
@@ -65,21 +68,20 @@ def arrhythmia_dataset():
 
 
 def auto_mpg_dataset():
-    # Test loading and plotting data.
-    
-    vurl = "https://archive.ics.uci.edu/ml/machine-learning-databases/auto-mpg/auto-mpg.data"
+    """Test loading and plotting data."""
+
+    vurl = ("https://archive.ics.uci.edu/ml/machine-learning-databases/"+
+           "auto-mpg/auto-mpg.data")
     tf.keras.utils.get_file(
         os.path.abspath(os.getcwd())+"\\auto-mpg.data", vurl)
-    
     print("[*] Auto MPG data downloaded...")
-
     vdf = pd.read_csv("auto-mpg.data", header=None, delim_whitespace=True)
-
     print(vdf.head())
 
 
 def breast_cancer_classification():
-    # Demo how to build a classifier on breast cancer data.
+    """Demo how to build a classifier on breast cancer data."""
+
     vdata = load_breast_cancer()
     print(type(vdata))
     print(vdata.keys())
