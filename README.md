@@ -1,51 +1,49 @@
-# Tensorflow Certification Study Notes #
-Notes on machine learning and tensorflow.
+# Tensorflow Certification #
+Learn to build neural networks using tensorflow.
 
 
-## about exam ##
-* need to build 5 models, from basic bin classifier, to time 
-  series forecast
-
+## About Exam ##
+* Need to build 5 models, from basic bin classifier, to time series forecasting
 * No surprises, just be ready to use PyCharm and TensorFlow
   datasets efficiently
-
 * https://github.com/lmoroney/dlaicourse
-* No you only have to provide models, **no need to plot things.**
-
+* No you only have to provide models, **no need to plot things**.
 * regression, DNN, image CNN, NLP (LSTM, CNN), and time series
 
 
-## workflow ##
-* read input data
-* transform data
-* design model architecture (correct number input nodes)
-* compile model with loss and optimizer
-* fit the model with number of epochs  
+## Workflow ##
+* Read input data
+* Transform data
+* Design model architecture (correct number input nodes)
+* Compile model with loss and optimizer
+* Fit the model with number of epochs  
 
 
-## neural nets ##
-* Input * Weights + Bias
-* Then activate
-* Run several times
-* Update weights and do backpropagation
-* This is learning
-* Vectorize input
+## Neural Networks ##
+Develop and experiment with models for arbitrary numerical data.
+
+* Input * Weights + Bias.
+* Then activate.
+* Run several times.
+* Update weights and do backpropagation.
+* This is learning.
+* Vectorize input.
 
 
-## models ##
-* pass data, make guess, use loss and optimizer to adjust.
-* make another guess, repeat
-* correct guess 1/3 times, then 2/3, then 3/3 (after optimization)
+## Model Development ##
+* Pass data, make guess, use loss and optimizer to adjust.
+* Make another guess, repeat
+* Correct guess 1/3 times, then 2/3, then 3/3 (after optimization)
 
 
-## convolutions ##
-* used to extract **features** from images.
-* for example, applying a certain convolution filter to an image,
+## Convolutions ##
+* Used to extract **features** from images.
+* For example, applying a certain convolution filter to an image,
   can produce a contour of the lines in the image. Therefore,
   the convolution was used to extract the line features of an image.
 
 
-## udemy ##
+## Udemy ##
 * Tensorflow 2.0
 * Deep Learning A-Z: Several projects in TF2
 * Deep Learning: The Complete Guide with ANN and CNN (good theory)
@@ -54,9 +52,10 @@ Notes on machine learning and tensorflow.
 
 * **X** Modern Deep Learning in Python: Uses TF1 and other libs
 * **X** The Complete ML Course with Python: Uses keras
+* [Google TF Course](https://developers.google.com/machine-learning/crash-course/first-steps-with-tensorflow)
 
 
-## activation functions ##
+## Activation Functions ##
 * Universal function approximator
 * Can process any type of data (text, images, audio)
 * **Sigmoid**
@@ -64,11 +63,11 @@ Notes on machine learning and tensorflow.
 * **ReLu**
 
 
-## hyperparameters ##
-* learning rate
-* regularization param
-* number of hidden layers
-* activation functions
+## Hyperparameters ##
+* Learning rate
+* Regularization param
+* Number of hidden layers
+* Activation functions
 
 * No precise way to choose hyperparameters.
 * Can use autoML to test all values.
@@ -76,7 +75,7 @@ Notes on machine learning and tensorflow.
 * Dependant on many factors.
 
 
-## cross validation ##
+## Cross Validation ##
 * General way to choose hyperparameters.
 * Fit to signal, not noise of data (overfitting).
 * Train - train on this data.
@@ -84,7 +83,7 @@ Notes on machine learning and tensorflow.
 * Test - use data at very end.
 
 
-## k-fold cross validation ##
+## K-fold Cross Validation ##
 * split data into k parts. EX k = 5:
     * 5 iterations
     * 1: train on 2-5, test on 1
@@ -94,6 +93,6 @@ Notes on machine learning and tensorflow.
 * THEN take mean and variance of classification rate.
 
 
-## reinforcement learning ##
-* is not just simple input/output (IN image OUT car/truck/etc)
-* keeps track of state of world (like in game AI)
+## Reinforcement Learning ##
+* Is not just simple input/output (IN image OUT car/truck/etc)
+* Keeps track of state of world (like in game AI)

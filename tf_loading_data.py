@@ -33,7 +33,6 @@ def building_models_demo():
     vmodel.compile(optimizer='adam', # Gradient Descent 
                 loss='binary_crossentropy', 
                 metrics=['accuracy', 'recall', 'precision'])
-
     vtrained = vmodel.fit(X_train, y_train, 
                         validation_data=(X_test, y_test),
                         epochs=100)
@@ -91,14 +90,12 @@ def breast_cancer_classification():
     X_train, X_test, y_train, y_test = train_test_split(
         vdata.data, vdata.target, test_size=0.33)
     N, D = X_train.shape
-
     print(N, D)
 
     # Scale the data (normalize)
     vscaler = StandardScaler()
     X_train = vscaler.fit_transform(X_train)
     X_test = vscaler.fit_transform(X_test)
-
     print(X_train)
 
     # Build the model
@@ -107,13 +104,11 @@ def breast_cancer_classification():
         tf.keras.layers.Dense(1, activation='sigmoid')
     ])
 
+    # Train model
     vmodel.compile(
         optimizer='adam',
         loss='binary_crossentropy',
-        metrics=['accuracy']
-    )
-
-    # Train model
+        metrics=['accuracy'])
     vres = vmodel.fit(X_train, y_train, 
         validation_data=(X_test, y_test), epochs=100)
 
