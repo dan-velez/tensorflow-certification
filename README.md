@@ -53,6 +53,7 @@ Develop and experiment with models for arbitrary numerical data.
 * **X** Modern Deep Learning in Python: Uses TF1 and other libs
 * **X** The Complete ML Course with Python: Uses keras
 * [Google TF Course](https://developers.google.com/machine-learning/crash-course/first-steps-with-tensorflow)
+* [Coursera dlaicourse](https://github.com/lmoroney/dlaicourse)
 
 
 ## Activation Functions ##
