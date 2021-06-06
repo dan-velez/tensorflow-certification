@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """
 Learning Tensorflow for developer certificate exam.
 https://ai.google/responsibilities/responsible-ai-practices/

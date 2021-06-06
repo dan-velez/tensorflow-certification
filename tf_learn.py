@@ -160,8 +160,9 @@ try:
     ])
 
     ten @ ten2
-except:
-    print("Cannot multiply tensors without equal side").
+except Exception as e:
+    print(e)
+    print("Cannot multiply tensors without equal side")
 
 # The **inner dimensions** of the matricies must match.
 # [3,2] and [3,2] DONT match. [3,2] and [2,3] match.
