@@ -41,7 +41,11 @@ Develop and experiment with models for arbitrary numerical data.
 * For example, applying a certain convolution filter to an image,
   can produce a contour of the lines in the image. Therefore,
   the convolution was used to extract the line features of an image.
-
+```python
+model = tf.keras.Sequential([
+  Conv2D(32, kernel_size=(3, 3), activation='relu', input_shape=(32,32,3)))
+])
+```
 
 ## Udemy ##
 * Tensorflow 2.0
