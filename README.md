@@ -34,6 +34,7 @@ Develop and experiment with models for arbitrary numerical data.
 * Pass data, make guess, use loss and optimizer to adjust.
 * Make another guess, repeat
 * Correct guess 1/3 times, then 2/3, then 3/3 (after optimization)
+* `build`, `compile`, `fit`, `evaluate`, `predict`.
 
 
 ## Convolutions ##
